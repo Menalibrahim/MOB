@@ -34,9 +34,10 @@ function IphoneProduct() {
     const iphone = 
         {
           name: "iphone",
-          img1: 'https://res.cloudinary.com/forfeta/image/upload/v1674824652/green/shinkurt_mmg2rh.jpg',
-          img2: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/green/karot_yl6mar.jpg',
-          img3: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/green/tikil_xrtbdx.jpg',
+          img1: 'https://cdn.dxomark.com/wp-content/uploads/medias/post-126771/Apple-iPhone-14-Pro_FINAL_featured-image-packshot-review-1.jpg',
+          img2: 'https://www.emsgadgets.com/wp-content/uploads/2021/08/apple-11-1.jpeg',
+          img3: 'https://www.emsgadgets.com/wp-content/uploads/2021/08/apple-11-1.jpeg',
+          img4: 'https://cdn.dxomark.com/wp-content/uploads/medias/post-126771/Apple-iPhone-14-Pro_FINAL_featured-image-packshot-review-1.jpg',
           price:"ETB 66,900",
           description: `iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface. The iPhone runs the iOS operating system, and in 2021 when the iPhone 13 was introduced, it offered up to 1 TB of storage and a 12-megapixel camera.`,
            phone: "0900000000"
@@ -50,7 +51,7 @@ function IphoneProduct() {
             <div className="row">
                 <div className="col-sm-12">
                     <div className="row">
-                        <Iphone imgs={[iphone.img1, iphone.img2, iphone.img3]} />
+                        <Iphone imgs={[iphone.img1, iphone.img2, iphone.img3, iphone.img4]} />
 
                         <div className="col-sm-12 col-lg-6 mb-3 pt-5 px-5">
                             <h3 style={{ color: "#2cb1bc" }}>

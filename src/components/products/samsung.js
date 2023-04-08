@@ -34,9 +34,10 @@ function SamsungProduct() {
     const samsung = 
         {
           name: "samsung",
-          img1: 'https://res.cloudinary.com/forfeta/image/upload/v1674824652/green/shinkurt_mmg2rh.jpg',
-          img2: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/green/karot_yl6mar.jpg',
-          img3: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/green/tikil_xrtbdx.jpg',
+          img1: 'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-ultra-5g-2.jpg',
+          img2: 'https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-a51/080620/A515G_Black_M.jpg?$cm-g-primary-selcection-mobile-jpg$',
+          img3: 'https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-a51/080620/A515G_Black_M.jpg?$cm-g-primary-selcection-mobile-jpg$',
+          img4: 'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-ultra-5g-2.jpg',
           price:"ETB 95,000",
           description: `South Korean company that is one of the world's largest producers of electronic devices. Samsung specializes in the production of a wide variety of consumer and industry electronics, including appliances, digital media devices, semiconductors, memory chips, and integrated systems.`,
            phone: "0900000000"
@@ -50,7 +51,7 @@ function SamsungProduct() {
             <div className="row">
                 <div className="col-sm-12">
                     <div className="row">
-                        <Samsung imgs={[samsung.img1, samsung.img2, samsung.img3]} />
+                        <Samsung imgs={[samsung.img1, samsung.img2, samsung.img3, samsung.img4]} />
 
                         <div className="col-sm-12 col-lg-6 mb-3 pt-5 px-5">
                             <h3 style={{ color: "#2cb1bc" }}>

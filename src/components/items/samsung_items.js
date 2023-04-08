@@ -4,23 +4,23 @@ const SamsungList = [];
 const Samsung = [
   {
     name: "Samsung Galaxy S22",
-    img1: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/asa_ssfkrq.jpg',
-    img2: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/asa_ssfkrq.jpg',
-    img3: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/tire_uselpo.jpg',    price:"95,000"
+    img1: 'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-ultra-5g-2.jpg',
+    img2: 'https://cdn.dxomark.com/wp-content/uploads/medias/post-107176/Samsung-Galaxy-S22-Exynos-featured-image-packshot-review-Recovered.jpg',
+    img3: 'https://minirate.ch/wp-content/uploads/2022/01/samsung-galaxy-s22-green-1.jpg',    price:"95,000"
   },
  
   {
     name: "Samsung Galaxy S21",
-    img1: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/800px-Blade_steak_ovhtep.jpg',
-    img2: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/tire_uselpo.jpg',
-    img3: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/asa_ssfkrq.jpg',    price:"95,000"
+    img1: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61jYjeuNUnL._AC_UF894,1000_QL80_.jpg',
+    img2: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71bdE2zv5+S.jpg',
+    img3: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71bdE2zv5+S.jpg',    price:"95,000"
   },
   
   {
     name: "Samsung Galaxy A51",
-    img1: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/tire_uselpo.jpg',
-    img2: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/800px-Blade_steak_ovhtep.jpg',
-    img3: 'https://res.cloudinary.com/forfeta/image/upload/v1674824651/meat/asa_ssfkrq.jpg',    price:"95,000"
+    img1: 'https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-a51/080620/A515G_Black_M.jpg?$cm-g-primary-selcection-mobile-jpg$',
+    img2: 'https://image-us.samsung.com/SamsungUS/home/mobile/galaxy-a51/080620/A51_Crush_White_M.jpg.jpg?$cm-g-primary-selcection-mobile-jpg$',
+    img3: 'https://fdn2.mobgsm.com/vv/bigpic/samsung-galaxy-a51-sm-a515.jpg',    price:"95,000"
   }
 ];
 
