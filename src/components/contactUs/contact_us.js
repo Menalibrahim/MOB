@@ -1,9 +1,11 @@
 import Wrapper from "../../assets/wrappers/contact_us";
 
 function ContactUs() {
-    return(
-        <Wrapper>
-           <section id="contactus" className="mt-5 p-5">
+
+return(
+<Wrapper>
+   <form >
+     <section id="contactus" className="mt-5 p-5">
   <div className="container">
     <div className="row">
       <div className="col-sm-12">
@@ -24,6 +26,7 @@ function ContactUs() {
                     name="first_name"
                     placeholder="Your first name"
                     required=""
+                    
                   />
                 </div>
                 <div className="form-group">
@@ -68,7 +71,7 @@ function ContactUs() {
                     defaultValue={""}
                   />
                 </div>
-                <button className="btn btn-primary btn-block text-dark border rounded border-light"
+                <button  className="btn btn-primary btn-block text-dark border rounded border-light"
                   type="submit"
                   style={{ background: "#2cb1bc" }}>
                   <strong>Send</strong>
@@ -81,8 +84,18 @@ function ContactUs() {
     </div>
   </div>
 </section>
+</form>
        </Wrapper>
-    )
-}
-
+)}
+// return(
+// <div>
+//   <ul>
+//     {text.map((texts) => {
+//       return (<li>{texts.firstname} {texts.lastname} {texts.email} {texts.phonenumber} {texts.message} </li> );
+//     })}
+//   </ul>
+//   <ContactUsForm addForm={addForm} />
+// </div>
+//     )
+// }
 export default ContactUs;

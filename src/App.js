@@ -1,9 +1,9 @@
 import React from "react";
-//import {NavBar, HomePage} from "./pages";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {HomePage, MyFooter} from "./pages";
 import { IphoneProduct, SamsungProduct } from "./components/products";
-//import IphoneProduct from "./components/products/iphone";
+import TechnoProduct from "./components/products/TechnoP";
+
 
 function App() {
   return(
@@ -13,10 +13,9 @@ function App() {
         <Route index element={<HomePage />}/>
         <Route path="iphone" element={<IphoneProduct/>}/>
         <Route path="samsung" element={<SamsungProduct/>}/>
-        
+        <Route path="techno" element={<TechnoProduct/>}/>
       </Routes>
           </BrowserRouter>
-
        );
 }
 
