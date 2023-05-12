@@ -1,0 +1,13 @@
+.brand-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brand-images img {
+  height: 9rem;
+  padding: 1rem;
+  border-radius: 1000px;
+}
+.mar-top {
+  margin-top: 10rem;
+}
