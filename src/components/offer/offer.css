@@ -1,0 +1,30 @@
+.services {
+  margin-top: 5rem;
+  display: flex;
+  gap: 10px;
+}
+.service {
+  transition: 0.5s;
+  padding: 2rem;
+  border: 1px solid var(--grey-100);
+  border-radius: 10px;
+}
+.service:hover {
+  border: 1px solid var(--primary-600);
+}
+.service-img {
+  /* filter: opacity(0.5) drop-shadow(0 0 rgb(255, 255, 255)); */
+  background-color: var(--primary-600);
+  padding: 1rem;
+  border-radius: 100rem;
+  aspect-ratio: 1/1;
+
+  height: 90px;
+}
+.service-title {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.service-description {
+}
