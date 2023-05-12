@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router";
 import Wrapper from "../../assets/wrappers/DescriptionPage";
 
 function DescriptionPage() {
+  const navigate = useNavigate();
+
+  const navigateToProduct = () => {
+    navigate("/products");
+  };
   return (
     <Wrapper>
       <div className="container">
@@ -18,7 +24,9 @@ function DescriptionPage() {
               warranty, and exceptional customer service. Elevate your phone
               game today and shop with us!
             </p>
-            <button className="margin-tt">Show Products</button>
+            <button className="margin-tt" onClick={navigateToProduct}>
+              Show Products
+            </button>
           </div>
 
           <div class="col-lg-6">
