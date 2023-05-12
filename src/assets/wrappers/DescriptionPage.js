@@ -31,7 +31,7 @@ const Wrapper = styled.main`
     margin-top: 10rem;
     width: 25%;
     transform: rotate(25deg);
-    position: absolute;
+    /* position: absolute; */
     right: 20%;
 
     height: 450px;
