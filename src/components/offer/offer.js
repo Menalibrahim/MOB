@@ -16,10 +16,10 @@ const Offer = () => {
         "https://img.icons8.com/glyph-neue/64/tiktok-verified-account.png",
       content:
         "Shop with confidence knowing that we only sell 100% original products. Trust us to provide you with the genuine devices you deserve.",
-      alt: "tiktok-verified-account",
+      alt: "verified-account",
     },
     {
-      title: "1 Year Waranty",
+      title: "1 Year Warranty",
       iconLink: "https://img.icons8.com/sf-black-filled/64/lock-2.png",
       content:
         "Protect your purchase with our comprehensive 1-year warranty. Shop now and enjoy peace of mind with every phone.",
@@ -43,7 +43,7 @@ const Offer = () => {
         <div className="services">
           {services.map((service) => {
             return (
-              <div className="service">
+              <div className="service" key={service.title}>
                 <img
                   className="service-img"
                   src={service.iconLink}
