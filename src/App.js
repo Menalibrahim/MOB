@@ -10,7 +10,7 @@ function App() {
       element: <NavBar />,
       children: [
         { index: "index", element: <HomePage /> },
-        { path: "product", element: <HomePage /> },
+        { path: "products", element: <HomePage /> },
         { path: "checkout", element: <IphoneProduct /> },
       ],
     },
