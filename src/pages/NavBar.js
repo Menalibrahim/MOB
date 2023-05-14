@@ -26,9 +26,9 @@ function NavBar() {
                     className="collapse navbar-collapse nav-holder"
                     id="navcol-1"
                   >
-                    <ul className="navbar-nav ml-auto float-right nav-holder">
+                    <ul className="navbar-nav ml-auto float-right nav-holder ">
                       <li className="nav-item linker">
-                        <Link className="nav-link active">
+                        <Link className="nav-link">
                           <i
                             style={{ color: "white" }}
                             className="fa fa-shopping-cart mr-1"
@@ -38,7 +38,7 @@ function NavBar() {
                       </li>
 
                       <li className="nav-item linker">
-                        <Link className="nav-link  active" to="products">
+                        <Link className="nav-link" to="products">
                           <i
                             style={{ color: "white" }}
                             class="fa fa-user"
