@@ -212,9 +212,20 @@ ul {
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
-  padding: 2rem 2.5rem;
+  padding: 2rem 0;
   margin: 3rem auto;
   transition: var(--transition);
+}
+.ppt {
+  padding: 0 1rem;
+  border: none;
+
+  margin-bottom: 6rem;
+}
+.ppr {
+  border: none;
+  border-radius: 10px;
+  margin-top: 3rem;
 }
 .form:hover {
   box-shadow: var(--shadow-4);
