@@ -1,39 +1,46 @@
-import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import Samsung from "../file/samsung";
+import Iphone from "../file/iphone";
+import Tecno from "../file/tecno";
+
+import { useContext, useEffect } from "react";
 import { PhoneDataContext } from "../context/phoneData.context";
+import EachProduct from "../components/eachProduct/eachProduct";
 
 const Products = () => {
-  const { allPhoneData, setAllPhoneData } = useContext(PhoneDataContext);
-
-  const [brands, setBrands] = useState([]);
-  console.log(brands);
-  const brandsFeatured = ["Samsung", "Apple", "Tecno"];
-  const brandsFeaturedID = [9, 48, 120];
-
-  // brandsFeaturedID[i]
-  const getBrands = async () => {
-    const options = {
-      method: "GET",
-      //url: "https://mobile-phones2.p.rapidapi.com/brands",
-      url: `https://mobile-phones2.p.rapidapi.com/${9}/phones`,
-      headers: {
-        "X-RapidAPI-Key": "c8ed8f9df2mshc7864cbb43e84f3p1de984jsnbb3ba336277b",
-        "X-RapidAPI-Host": "mobile-phones2.p.rapidapi.com",
-      },
-    };
-
-    try {
-      const response = await axios.request(options);
-      setBrands(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  const phoneBrands = ["Samsung", "Apple", "Tecno"];
+  const {
+    samsung,
+    setSamsung,
+    iphone,
+    setIphone,
+    tecno,
+    setTecno,
+    allPhones,
+    setAllPhones,
+  } = useContext(PhoneDataContext);
+  //console.log(allPhones);
 
   useEffect(() => {
-    getBrands();
+    //samsung
+    setSamsung(Samsung);
+    //iphone
+    setIphone(Iphone);
+    //tecno
+    setTecno(Tecno);
+
+    //all phones
+    setAllPhones([...Samsung, ...Iphone, ...Tecno]);
   }, []);
 
-  return <div>products</div>;
+  return (
+    <div className="products-container">
+      {phoneBrands.map((phoneBrand) => {
+        const FilteredBrand = allPhones.filter(
+          (phone) => phone.brand_name === phoneBrand
+        );
+        return <EachProduct FilteredBrand={FilteredBrand} key={phoneBrand} />;
+      })}
+    </div>
+  );
 };
 export default Products;
