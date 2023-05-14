@@ -7,13 +7,25 @@ export const PhoneDataContext = createContext({
   setIphone: () => {},
   tecno: [],
   setTecno: () => {},
+  allPhones: [],
+  setAllPhones: () => {},
 });
 export const PhoneDataProvider = ({ children }) => {
-  const [samsung, setSamsung] = useState("");
-  const [iphone, setIphone] = useState("");
-  const [tecno, setTecno] = useState("");
+  const [samsung, setSamsung] = useState([]);
+  const [iphone, setIphone] = useState([]);
+  const [tecno, setTecno] = useState([]);
+  const [allPhones, setAllPhones] = useState([]);
 
-  const value = { samsung, setSamsung, iphone, setIphone, tecno, setTecno };
+  const value = {
+    allPhones,
+    setAllPhones,
+    samsung,
+    setSamsung,
+    iphone,
+    setIphone,
+    tecno,
+    setTecno,
+  };
 
   return (
     <PhoneDataContext.Provider value={value}>
