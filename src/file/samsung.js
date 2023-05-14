@@ -1,4 +1,4 @@
-const samsung = [
+const Samsung = [
   {
     brand_id: 9,
     brand_name: "Samsung",
@@ -77,4 +77,4 @@ const samsung = [
   },
 ];
 
-export default samsung;
+export default Samsung;
