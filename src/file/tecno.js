@@ -40,7 +40,7 @@ const Tecno = [
     brand_id: 120,
     brand_name: "Tecno",
     description:
-      "Tecno Pop 7 Android smartphone. Announced Mar 2023. Features 6.6″  display, 5000 mAh battery, 64 GB storage, 2 GB RAM.",
+      "Tecno Pop 7 Android smartphone. Announced Mar 2023. Features 6.6″  display,a, 5000 mAh battery, 64 GB storage, 2 GB RAM.",
     id: "tecno_pop_7-12202",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-pop7.jpg",
     phone_name: "Pop 7",
@@ -58,7 +58,7 @@ const Tecno = [
     brand_id: 120,
     brand_name: "Tecno",
     description:
-      "Tecno Spark 10C Android smartphone. Announced Mar 2023. Features 6.6″  display, 5000 mAh battery, 128 GB storage, 8 GB RAM.",
+      "Tecno Spark 10C Android smartphone. Announced Mar 2023. Features 6.6″  display, a, 5000 mAh battery, 128 GB storage, 8 GB RAM.",
     id: "tecno_spark_10c-12199",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-spark-10c.jpg",
     phone_name: "Spark 10C",
