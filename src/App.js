@@ -1,7 +1,8 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage, NavBar } from "./pages";
-import { IphoneProduct, SamsungProduct } from "./components/products";
+import { IphoneProduct } from "./components/products";
+import Products from "./pages/products";
 
 function App() {
   const router = createBrowserRouter([
@@ -10,7 +11,7 @@ function App() {
       element: <NavBar />,
       children: [
         { index: "index", element: <HomePage /> },
-        { path: "products", element: <HomePage /> },
+        { path: "products", element: <Products /> },
         { path: "checkout", element: <IphoneProduct /> },
       ],
     },
