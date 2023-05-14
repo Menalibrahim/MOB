@@ -68,7 +68,7 @@ const Iphone = [
     brand_id: 48,
     brand_name: "Apple",
     description:
-      "Apple Watch Ultra watch. Announced Sep 2022. Features 1.92″  display, Apple S8 chipset, 542 mAh battery, 32 GB storage, MIL-STD 810H certified, Sapphire crystal glass.",
+      "Apple Watch Ultra watch. Announced Sep 2022. Features 1.92″  display, Apple S8 chipset, 542 mAh battery, 32 GB storage, MIL-STD 810H, Sapphire crystal glass.",
     id: "apple_watch_ultra-11827",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-ultra.jpg",
     phone_name: "Watch Ultra",
