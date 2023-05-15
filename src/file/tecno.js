@@ -8,6 +8,7 @@ const Tecno = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon20-premier-5g.jpg",
     phone_name: "Camon 20 Premier",
+    price: 30000,
   },
   {
     brand_id: 120,
@@ -17,6 +18,7 @@ const Tecno = [
     id: "tecno_camon_20_pro_5g-12255",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon20-pro-5g.jpg",
     phone_name: "Camon 20 Pro 5G",
+    price: 28000,
   },
   {
     brand_id: 120,
@@ -26,6 +28,7 @@ const Tecno = [
     id: "tecno_camon_20_pro-12254",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon20-pro.jpg",
     phone_name: "Camon 20 Pro",
+    price: 19000,
   },
   {
     brand_id: 120,
@@ -35,6 +38,7 @@ const Tecno = [
     id: "tecno_camon_20-12253",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-camon20-pro.jpg",
     phone_name: "Camon 20",
+    price: 22000,
   },
   {
     brand_id: 120,
@@ -44,6 +48,7 @@ const Tecno = [
     id: "tecno_pop_7-12202",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-pop7.jpg",
     phone_name: "Pop 7",
+    price: 25000,
   },
   {
     brand_id: 120,
@@ -53,6 +58,7 @@ const Tecno = [
     id: "tecno_spark_10_5g-12179",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-spark10-5g.jpg",
     phone_name: "Spark 10 5G",
+    price: 18000,
   },
   {
     brand_id: 120,
@@ -62,6 +68,7 @@ const Tecno = [
     id: "tecno_spark_10c-12199",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-spark-10c.jpg",
     phone_name: "Spark 10C",
+    price: 20000,
   },
   {
     brand_id: 120,
@@ -71,6 +78,7 @@ const Tecno = [
     id: "tecno_spark_10-12178",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/tecno-spark10.jpg",
     phone_name: "Spark 10",
+    price: 17000,
   },
 ];
 
