@@ -1,9 +1,16 @@
 import "../assets/bootstrap/bootstrap.min.css";
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import MyFooter from "./Footer";
+import { CartHolderContext } from "../context/cartHolder.context";
+import Cart from "../components/cart/cart.component";
 
 function NavBar() {
+  const { isCartOpen, setIsCartOpen } = useContext(CartHolderContext);
+  const toggleCart = () => {
+    setIsCartOpen((currentCart) => !currentCart);
+  };
+  console.log(isCartOpen);
   return (
     <Fragment>
       <section id="navbar" style={{ background: "#14919b" }}>
@@ -28,7 +35,7 @@ function NavBar() {
                   >
                     <ul className="navbar-nav ml-auto float-right nav-holder ">
                       <li className="nav-item linker">
-                        <Link className="nav-link">
+                        <Link onClick={toggleCart} className="nav-link">
                           <i
                             style={{ color: "white" }}
                             className="fa fa-shopping-cart mr-1"
@@ -57,6 +64,7 @@ function NavBar() {
       </section>
       <Outlet />
       <MyFooter />
+      {isCartOpen && <Cart />}
     </Fragment>
   );
 }
