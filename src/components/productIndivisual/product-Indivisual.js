@@ -1,5 +1,15 @@
+import { useContext } from "react";
+import { CartHolderContext } from "../../context/cartHolder.context";
+
 const ProductIndividual = ({ phone }) => {
+  const { cartItems, addItemToCart } = useContext(CartHolderContext);
+  // console.log(number);
+
   const description = phone.description.split(",");
+
+  const cartClickHandler = () => {
+    addItemToCart(phone);
+  };
 
   return (
     <div className="product-individual">
@@ -9,8 +19,9 @@ const ProductIndividual = ({ phone }) => {
         <li>🔋{description[2]}</li>
         <li>📁{description[3]}</li>
         <li>⚡{description[4]}</li>
+        <li>💰 {phone.price} Birr</li>
       </ul>
-      <button>🛒 Add To Cart</button>
+      <button onClick={cartClickHandler}>🛒 Add To Cart</button>
     </div>
   );
 };
