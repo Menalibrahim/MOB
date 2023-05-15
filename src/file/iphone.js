@@ -8,6 +8,7 @@ const Iphone = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2022.jpg",
     phone_name: "iPad Pro 12.9 (2022)",
+    price: 98000,
   },
   {
     brand_id: 48,
@@ -17,6 +18,7 @@ const Iphone = [
     id: "apple_ipad_pro_11_(2022)-11940",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-11-2022.jpg",
     phone_name: "iPad Pro 11 (2022)",
+    price: 90000,
   },
   {
     brand_id: 48,
@@ -26,6 +28,7 @@ const Iphone = [
     id: "apple_ipad_(2022)-11941",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-10-2022.jpg",
     phone_name: "iPad (2022)",
+    price: 92000,
   },
   {
     brand_id: 48,
@@ -36,6 +39,7 @@ const Iphone = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro-max-.jpg",
     phone_name: "iPhone 14 Pro Max",
+    price: 88000,
   },
   {
     brand_id: 48,
@@ -45,6 +49,7 @@ const Iphone = [
     id: "apple_iphone_14_pro-11860",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
     phone_name: "iPhone 14 Pro",
+    price: 82000,
   },
   {
     brand_id: 48,
@@ -54,6 +59,7 @@ const Iphone = [
     id: "apple_iphone_14_plus-11862",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-plus.jpg",
     phone_name: "iPhone 14 Plus",
+    price: 85000,
   },
   {
     brand_id: 48,
@@ -63,6 +69,7 @@ const Iphone = [
     id: "apple_iphone_14-11861",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
     phone_name: "iPhone 14",
+    price: 80000,
   },
   {
     brand_id: 48,
@@ -72,6 +79,7 @@ const Iphone = [
     id: "apple_watch_ultra-11827",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/apple-watch-ultra.jpg",
     phone_name: "Watch Ultra",
+    price: 33000,
   },
 ];
 
