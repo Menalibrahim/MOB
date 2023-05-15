@@ -1,0 +1,22 @@
+.cart-the-hole {
+  position: fixed;
+  top: 7rem;
+  right: 3rem;
+  width: 12rem;
+  height: 16rem;
+  border: var(--primary-600) solid 1px;
+  border-radius: 14px;
+  background-color: white;
+}
+.cart-button {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 0;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.cart-items {
+}
+.item {
+}
