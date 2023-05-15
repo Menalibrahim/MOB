@@ -8,6 +8,7 @@ const Samsung = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a24-4g-2.jpg",
     phone_name: "Galaxy A24 4G",
+    price: 44000,
   },
   {
     brand_id: 9,
@@ -17,6 +18,7 @@ const Samsung = [
     id: "samsung_galaxy_f14-12175",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f14.jpg",
     phone_name: "Galaxy F14",
+    price: 29000,
   },
   {
     brand_id: 9,
@@ -26,6 +28,7 @@ const Samsung = [
     id: "samsung_galaxy_m54-12189",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m54-5g.jpg",
     phone_name: "Galaxy M54",
+    price: 46000,
   },
   {
     brand_id: 9,
@@ -35,6 +38,7 @@ const Samsung = [
     id: "samsung_galaxy_a54-12070",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a54.jpg",
     phone_name: "Galaxy A54",
+    price: 47000,
   },
   {
     brand_id: 9,
@@ -44,6 +48,7 @@ const Samsung = [
     id: "samsung_galaxy_a34-12074",
     image_url: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a34.jpg",
     phone_name: "Galaxy A34",
+    price: 40000,
   },
   {
     brand_id: 9,
@@ -54,6 +59,7 @@ const Samsung = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m14-5g-sm-m146.jpg",
     phone_name: "Galaxy M14",
+    price: 27000,
   },
   {
     brand_id: 9,
@@ -64,6 +70,7 @@ const Samsung = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
     phone_name: "Galaxy S23 Ultra",
+    price: 78000,
   },
   {
     brand_id: 9,
@@ -74,6 +81,7 @@ const Samsung = [
     image_url:
       "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-plus-5g.jpg",
     phone_name: "Galaxy S23+",
+    price: 66000,
   },
 ];
 
