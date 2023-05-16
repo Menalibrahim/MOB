@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartHolderContext } from "../context/cartHolder.context";
 
 function MyFooter() {
+  const { setIsCartOpen, cartItemCounter } = useContext(CartHolderContext);
+  const toggleCart = () => {
+    setIsCartOpen((currentCart) => !currentCart);
+  };
   return (
     <section
       id="bootom-navbar"
@@ -27,11 +33,11 @@ function MyFooter() {
             </p>
           </div>
         </Link>
-        <Link className="footer-link" to="products">
+        <Link className="footer-link" onClick={toggleCart}>
           <div className="text-center mt-2">
             <i style={{ color: "white" }} class="fa fa-shopping-cart"></i>
             <p style={{ fontSize: "14px" }}>
-              <strong>Carts</strong>
+              <strong>{cartItemCounter} &nbsp; Carts</strong>
             </p>
           </div>
         </Link>
