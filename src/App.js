@@ -1,8 +1,9 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage, NavBar } from "./pages";
-import { IphoneProduct } from "./components/products";
+
 import Products from "./pages/products";
+import Checkout from "./pages/checkout";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,7 +13,7 @@ function App() {
       children: [
         { index: "index", element: <HomePage /> },
         { path: "products", element: <Products /> },
-        { path: "checkout", element: <IphoneProduct /> },
+        { path: "checkout", element: <Checkout /> },
       ],
     },
   ]);
