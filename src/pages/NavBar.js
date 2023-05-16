@@ -6,7 +6,8 @@ import { CartHolderContext } from "../context/cartHolder.context";
 import Cart from "../components/cart/cart.component";
 
 function NavBar() {
-  const { isCartOpen, setIsCartOpen } = useContext(CartHolderContext);
+  const { isCartOpen, setIsCartOpen, cartItemCounter } =
+    useContext(CartHolderContext);
   const toggleCart = () => {
     setIsCartOpen((currentCart) => !currentCart);
   };
@@ -40,7 +41,7 @@ function NavBar() {
                             style={{ color: "white" }}
                             className="fa fa-shopping-cart mr-1"
                           />
-                          <b>Cart</b>
+                          <b>{cartItemCounter} &nbsp; Cart</b>
                         </Link>
                       </li>
 
