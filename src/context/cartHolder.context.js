@@ -11,6 +11,7 @@ export const CartHolderContext = createContext({
   cartItemCounter: 0,
   setCartItemCounter: () => {},
   total: 0,
+  buyNow: () => {},
 });
 export const CartHolderProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
@@ -87,6 +88,10 @@ export const CartHolderProvider = ({ children }) => {
     }
   };
 
+  const buyNow = (itemToBeBought) => {
+    setCartItems([{ ...itemToBeBought, quantity: 1 }]);
+  };
+
   const value = {
     cartItems,
     addItemToCart,
@@ -96,6 +101,8 @@ export const CartHolderProvider = ({ children }) => {
     deleteFromCart,
     cartItemCounter,
     total,
+    setCartItems,
+    buyNow,
   };
 
   return (
