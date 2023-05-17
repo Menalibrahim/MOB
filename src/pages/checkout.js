@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartHolderContext } from "../context/cartHolder.context";
 import Wrapper from "../assets/wrappers/contact_us";
+import "../components/cart/checkout.query.css";
 
 const Checkout = () => {
   const { cartItems, subFromCart, addItemToCart, deleteFromCart, total } =
@@ -27,6 +28,11 @@ const Checkout = () => {
             <hr />
           </h1>
           <div className="checkout-items">
+            {cartItems.length < 1 ? (
+              <h3 className="noMessage">No Item Selected</h3>
+            ) : (
+              ""
+            )}
             {cartItems.map((cartItem) => (
               <div className="checkout">
                 <div className="checkout-headers">
@@ -50,7 +56,7 @@ const Checkout = () => {
                     +
                   </button>
                 </div>
-                <p>{cartItem.price} Birr</p>
+                <p className="checkout-price">{cartItem.price} Birr</p>
                 <button
                   className="delete-checkout"
                   onClick={() => {
@@ -63,7 +69,7 @@ const Checkout = () => {
             ))}
           </div>
           <hr />
-          <h3>Total : {total}</h3>
+          <h3 className="checkout-total">Total : {total} Birr</h3>
         </div>
       </div>
     </Wrapper>
