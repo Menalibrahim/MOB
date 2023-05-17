@@ -25,16 +25,16 @@ function NavBar() {
             <div className="col-sm-12">
               <nav className="navbar navbar-light navbar-expand-lg py-3">
                 <div className="container-fluid">
-                  <a
+                  <Link
                     className="navbar-brand"
-                    href="/"
+                    to="/"
                     style={{
                       fontFamily: "Montserrat, sans-serif",
                       color: "white",
                     }}
                   >
                     <strong>MOB</strong>
-                  </a>
+                  </Link>
                   <div
                     className="collapse navbar-collapse nav-holder"
                     id="navcol-1"
