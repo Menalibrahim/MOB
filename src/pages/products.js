@@ -8,7 +8,7 @@ import EachProduct from "../components/eachProduct/eachProduct";
 import { CartHolderContext } from "../context/cartHolder.context";
 
 const Products = () => {
-  const { cartItems } = useContext(CartHolderContext);
+  // const { cartItems } = useContext(CartHolderContext);
   //console.log(cartItems);
 
   const phoneBrands = ["Samsung", "Apple", "Tecno"];
