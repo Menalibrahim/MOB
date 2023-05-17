@@ -415,7 +415,7 @@ ul {
   color: white;
 }
 .product-individual-title {
-  font-size: 1.2rem;
+  font-size: 1.12rem;
   margin-left: 0.4rem;
   font-weight: 600;
 }
@@ -424,7 +424,24 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-size: 0.86rem;
 }
+
+/*********/
+/**error**/
+/*********/
+
+.page-404 {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-404 {
+  font-size: 2.2rem;
+}
+
 @media (max-width: 75.75em) {
   .product-holder {
     grid-template-columns: repeat(4, 1fr);
