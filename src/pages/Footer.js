@@ -41,6 +41,14 @@ function MyFooter() {
             </p>
           </div>
         </Link>
+        <Link className="footer-link" to="/checkout">
+          <div className="text-center mt-2">
+            <i style={{ color: "white" }} class="fa fa-solid fa-receipt"></i>
+            <p style={{ fontSize: "14px" }}>
+              <strong>Checkout</strong>
+            </p>
+          </div>
+        </Link>
       </div>
     </section>
   );
