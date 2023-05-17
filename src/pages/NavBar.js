@@ -1,20 +1,25 @@
 import "../assets/bootstrap/bootstrap.min.css";
 import { Fragment, useContext } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import MyFooter from "./Footer";
 import { CartHolderContext } from "../context/cartHolder.context";
 import Cart from "../components/cart/cart.component";
 
 function NavBar() {
+  const navigate = useNavigate();
   const { isCartOpen, setIsCartOpen, cartItemCounter } =
     useContext(CartHolderContext);
   const toggleCart = () => {
     setIsCartOpen((currentCart) => !currentCart);
   };
-  console.log(isCartOpen);
+
+  const openProducts = () => {
+    navigate("/products");
+  };
+  // console.log(isCartOpen);
   return (
     <Fragment>
-      <section id="navbar" style={{ background: "#14919b" }}>
+      <section id="navbar" className="navv" style={{ background: "#14919b" }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -46,13 +51,23 @@ function NavBar() {
                       </li>
 
                       <li className="nav-item linker">
-                        <Link className="nav-link" to="products">
+                        <Link className="nav-link" to="/products">
                           <i
                             style={{ color: "white" }}
                             class="fa fa-user"
                             aria-hidden="true"
                           ></i>
                           <b>Products</b>
+                        </Link>
+                      </li>
+
+                      <li className="nav-item linker">
+                        <Link to="/checkout" className="nav-link">
+                          <i
+                            style={{ color: "white" }}
+                            className="fa fa-receipt mr-1"
+                          />
+                          <b>Checkout</b>
                         </Link>
                       </li>
                     </ul>
@@ -63,6 +78,7 @@ function NavBar() {
           </div>
         </div>
       </section>
+      <div className="mrgn-tp"></div>
       <Outlet />
       <MyFooter />
       {isCartOpen && <Cart />}
