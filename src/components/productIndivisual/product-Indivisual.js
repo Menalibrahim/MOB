@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { CartHolderContext } from "../../context/cartHolder.context";
+import { useNavigate } from "react-router-dom";
 
 const ProductIndividual = ({ phone }) => {
-  const { cartItems, addItemToCart } = useContext(CartHolderContext);
+  const navigate = useNavigate();
+  const { addItemToCart } = useContext(CartHolderContext);
   // console.log(number);
 
   const description = phone.description.split(",");
@@ -11,8 +13,13 @@ const ProductIndividual = ({ phone }) => {
     addItemToCart(phone);
   };
 
+  const goToProductDetailPage = () => {};
+
   return (
-    <div className="product-individual">
+    <div
+      className="product-individual containes"
+      onClick={goToProductDetailPage}
+    >
       <img src={phone.image_url} alt={phone.phone_name} />
       <h5 className="product-individual-title">{phone.phone_name}</h5>
       <ul className="product-individual-list">
