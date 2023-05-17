@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
-import "./cart.css";
 import { CartHolderContext } from "../../context/cartHolder.context";
 import { useNavigate } from "react-router-dom";
 
+import "./cart.css";
+import "./cart.query.css";
+
 const Cart = () => {
   const navigate = useNavigate();
-  const { cartItems } = useContext(CartHolderContext);
+  const { cartItems, setIsCartOpen } = useContext(CartHolderContext);
   return (
     <div className="cart-the-hole">
       <h6>Cart Items</h6>
@@ -26,6 +28,7 @@ const Cart = () => {
       <button
         className="cart-button"
         onClick={() => {
+          setIsCartOpen(false);
           navigate("/checkout");
         }}
       >
