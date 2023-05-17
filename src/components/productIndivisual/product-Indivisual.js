@@ -13,21 +13,22 @@ const ProductIndividual = ({ phone }) => {
     addItemToCart(phone);
   };
 
-  const goToProductDetailPage = () => {};
+  const goToProductDetailPage = () => {
+    navigate(`${phone.id}`);
+  };
 
   return (
-    <div
-      className="product-individual containes"
-      onClick={goToProductDetailPage}
-    >
-      <img src={phone.image_url} alt={phone.phone_name} />
-      <h5 className="product-individual-title">{phone.phone_name}</h5>
-      <ul className="product-individual-list">
-        <li>🔋{description[2]}</li>
-        <li>📁{description[3]}</li>
-        <li>⚡{description[4]}</li>
-        <li>💰 {phone.price} Birr</li>
-      </ul>
+    <div className="product-individual containes">
+      <div onClick={goToProductDetailPage}>
+        <img src={phone.image_url} alt={phone.phone_name} />
+        <h5 className="product-individual-title">{phone.phone_name}</h5>
+        <ul className="product-individual-list">
+          <li>🔋{description[2]}</li>
+          <li>📁{description[3]}</li>
+          <li>⚡{description[4]}</li>
+          <li>💰 {phone.price} Birr</li>
+        </ul>
+      </div>
       <button onClick={cartClickHandler}>🛒 Add To Cart</button>
     </div>
   );
