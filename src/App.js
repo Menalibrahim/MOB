@@ -10,6 +10,7 @@ import Products from "./pages/products";
 import Checkout from "./pages/checkout";
 import ProductDetail from "./pages/productDetail";
 import { PhoneDataContext } from "./context/phoneData.context";
+import Error from "./pages/error";
 
 function App() {
   const phoneBrands = ["Samsung", "Apple", "Tecno"];
@@ -40,6 +41,7 @@ function App() {
     {
       path: "/",
       element: <NavBar />,
+      errorElement: <Error />,
       children: [
         { index: "index", element: <HomePage /> },
         { path: "products", element: <Products /> },
